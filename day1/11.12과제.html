@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            height: 800px;
+            /* background: black; */
+        }
+
+        .container > div {
+            width: 50%;
+            height: 800px;
+        }
+
+        .container > .img1,
+        .container > .img2,
+        .container > .img3 {
+            transition: 0.5s;
+        }
+
+        .container > .img1 {
+            background: url(./img1.jpg);
+            background-size: cover;
+        }
+
+        .container > .img2 {
+            background: url(./img2.jfif);
+            background-size: cover;
+        }
+
+        .container > .img3 {
+            background: url(./img3.jpg);
+            background-size: cover;
+        }
+
+        h2,
+        p {
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .container > div > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 800px;
+        }
+        .container > div > div > p,
+        .container > div > div > h2 {
+        }
+
+        .img1:hover,
+        .img2:hover,
+        .img3:hover {
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <article class="container">
+        <div class="img1">
+            <div>
+                <h2>Leather</h2>
+                <p>프리미엄가족</p>
+            </div>
+        </div>
+        <div class="img2">
+            <div>
+                <h2>Fabric</h2>
+                <p>기능성 페브릭</p>
+            </div>
+        </div>
+        <div class="img3">
+            <div>
+                <h2>Material</h2>
+                <p>올바른 내장제</p>
+            </div>
+        </div>
+    </article>
+</body>
+</html>
