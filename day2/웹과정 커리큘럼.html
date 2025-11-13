@@ -1,20 +1,128 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>웹과정커리큘럼</title>
+    <script src="https://kit.fontawesome.com/c7368c6058.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        body {
+            background: yellowgreen;
+        }
+
+        article {
+            height: 800px;
+        }
+
+        article > .hover {
+            margin: 10px 0;
+            width: 100%;
+            height: 50px;
+            border: 2px solid green;
+        }
+
+        .box1:hover {
+            cursor: pointer;
+            background: red;
+            height: 100%;
+            padding: 0;
+            width: 20%;
+            transition: 0.5s;
+        }
+
+        .box2:hover {
+            cursor: pointer;
+            background: red;
+            height: 100%;
+            padding: 0;
+            width: 40%;
+
+        }
+
+        .box3:hover {
+            cursor: pointer;
+            background: red;
+            height: 100%;
+            padding: 0;
+            width: 60%;
+
+        }
+        .box4:hover {
+            cursor: pointer;
+            background: red;
+            height: 100%;
+            padding: 0;
+            width: 80%;
+
+        }
+        .box5:hover {
+            cursor: pointer;
+            background: red;
+            height: 100%;
+            padding: 0;
+            width: 100%;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5 {
+            height: 100%;
+        }
+
+        p {
+            line-height: 50px;
+            margin: 0;
+        }
+    </style>
+
 </head>
+
 <body>
     <section>
         <h2>웹과정 커리큘럼</h2>
         <article>
-            <div class="hover box1">20%</div>
-            <div class="hover box2">40%</div>
-            <div class="hover box3">60%</div>
-            <div class="hover box4">80%</div>
-            <div class="hover box5">100%</div>
+            <div class="hover">
+                <div class="box1">
+                    <p>20%</p>
+                    <!-- 아이콘 들어갈 자리 -->
+                </div>
+            </div>
+
+            <div class="hover">
+                <div class="box2">
+                    <p>40%</p>
+                    <!-- 아이콘 들어갈 자리 -->
+                </div>
+            </div>
+
+            <div class="hover">
+                <div class="box3">
+                    <p>60%</p>
+                    <!-- 아이콘 들어갈 자리 -->
+                </div>
+            </div>
+
+            <div class="hover">
+                <div class="box4">
+                    <p>80%</p>
+                    <!-- 아이콘 들어갈 자리 -->
+                </div>
+            </div>
+
+            <div class="hover">
+                <div class="box5">
+                    <p>100%</p>
+                    <!-- 아이콘 들어갈 자리 -->
+                </div>
+            </div>
+
         </article>
     </section>
 </body>
+
 </html>
