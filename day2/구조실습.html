@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조실습</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            background: pink;
+            line-height: 100px;
+        }
+
+        header > h1 {
+            margin: 0 10px;
+        }
+
+        header > ul {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+            margin: 0 10px;
+            height: 100px;
+            /* background: #fff; */
+        }
+
+        header > ul > li > a{
+            background: #fff;
+            text-decoration: none;
+            color: pink;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        section {
+            margin: 20px 0;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .news {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 530px;
+            margin: 0 10px 0 0;
+        }
+
+        .news > div {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid pink;
+        }
+        .ad {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        h2 {
+            font-weight: 500;
+        }
+
+        footer {
+            margin: 20px 0;
+            background: pink;
+            width: 100%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 머릿글 -->
+    <header>
+        <h1>Logo</h1>
+        <ul>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Menu</a></li>
+        </ul>
+    </header>
+    <!-- 중간내용 -->
+    <section>
+        <!-- 좌측 뉴스기사 -->
+        <article class="news">
+            <div>
+                <h2>기사 헤드라인 입니다.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore aperiam deleniti quo odio corrupti nostrum perspiciatis voluptatum suscipit aspernatur eos eum nobis deserunt asperiores eligendi laborum quod, praesentium ipsam!</p>
+            </div>
+            <div>
+                <h2>기사 헤드라인 입니다.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore aperiam deleniti quo odio corrupti nostrum perspiciatis voluptatum suscipit aspernatur eos eum nobis deserunt asperiores eligendi laborum quod, praesentium ipsam!</p>
+            </div>
+            <div>
+                <h2>기사 헤드라인 입니다.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore aperiam deleniti quo odio corrupti nostrum perspiciatis voluptatum suscipit aspernatur eos eum nobis deserunt asperiores eligendi laborum quod, praesentium ipsam!</p>
+            </div>
+            <div>
+                <h2>기사 헤드라인 입니다.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore aperiam deleniti quo odio corrupti nostrum perspiciatis voluptatum suscipit aspernatur eos eum nobis deserunt asperiores eligendi laborum quod, praesentium ipsam!</p>
+            </div>
+            <div>
+                <h2>기사 헤드라인 입니다.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore aperiam deleniti quo odio corrupti nostrum perspiciatis voluptatum suscipit aspernatur eos eum nobis deserunt asperiores eligendi laborum quod, praesentium ipsam!</p>
+            </div>
+            <div>
+                <h2>기사 헤드라인 입니다.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore aperiam deleniti quo odio corrupti nostrum perspiciatis voluptatum suscipit aspernatur eos eum nobis deserunt asperiores eligendi laborum quod, praesentium ipsam!</p>
+            </div>
+        </article>
+
+        <!-- 우측 광고같은거 검색도 있음 -->
+        <article class="ad">
+            <h2>광고 제목?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores officia consequatur aut soluta alias delectus, eveniet quaerat iure porro molestiae culpa at ipsum minus? Aperiam ratione qui tenetur dignissimos voluptatibus.</p>
+            <!-- 까먹음 두개 -->
+            <h2>광고</h2>
+            <p>내용</p>
+        </article>
+    </section>
+    <!-- 바닥글 -->
+    <footer>
+        <span>푸터입니다.</span>
+    </footer>
+</body>
+</html>
