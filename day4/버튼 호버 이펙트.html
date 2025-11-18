@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션실습</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            justify-items: center;
+        }
+
+        div {
+            width: 200px;
+            height: 50px;
+            background: aqua;
+            justify-items: center;
+            line-height: 50px;
+        }
+
+        p {
+            color:white
+        }
+
+        div:hover {
+            animation: hover 3s ease infinite;
+        }
+
+        @keyframes hover {
+            25% {
+                transform: rotate(25deg);
+            }
+
+            50% {
+                transform: rotate(-25deg)
+            }
+
+            75% {
+                transform: rotate(25deg);
+
+            }
+
+            100% {
+                transform: rotate(-25deg)
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <p>호버시 버튼이 흔들려요</p>
+    </div>
+</body>
+</html>

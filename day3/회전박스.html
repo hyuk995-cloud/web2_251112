@@ -5,31 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회전박스</title>
     <style>
-
-
-        div {
+        .box {
             width: 100px;
             height: 100px;
-            background: blue;
+            background: black;
+            border-radius: 24px;
+            animation: box_translate 5s linear infinite;
         }
 
-        div {
-            animation: anime 1s linear 1s infinite forwards;
-        }
-
-        @keyframes anime {
-            form {
-                width: 10%;
+        @keyframes box_translate {
+            25% {
+                transform: translateX(200px);
             }
 
-            to {
-                height: 10%;
+            50% {
+                transform: translate(200px, 200px);
+            }
+
+            75% {
+                transform: translate(0, 200px);
+            }
+
+
+            /* 100%는 생략이 가능 */
+            100% {
+                transform: translate(0, 0);
             }
         }
 
     </style>
 </head>
 <body>
-    <div></div>
+    <div class="box"></div>
 </body>
 </html>
