@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>x회전 만들기</title>
+    <script src="https://kit.fontawesome.com/c7368c6058.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            margin: 0 auto;
+            padding: 14px 50px;
+            display: flex;
+            justify-content: space-between;
+            background: yellowgreen;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        li {
+            padding: 16px;
+        }
+
+        .plus_btn > button {
+            background: none;
+            border: none;
+            color: #fff;
+        }
+        .plus_btn > button:hover i {
+            animation: ani 1s ease infinite;
+        }
+
+        @keyframes ani {
+            /* from도 가능하고 %도 가능함 */
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(225deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 calss="logo">
+            LOGO
+        </h1>
+        <ul>
+            <li>
+                메뉴1
+            </li>
+            <li>
+                메뉴2
+            </li>
+            <li>
+                메뉴3
+            </li>
+            <li>
+                메뉴4
+            </li>
+        </ul>
+
+        <div class="plus_btn">
+            <button>
+                <i class="fa-solid fa-plus fa-2xl"></i>
+            </button>
+        </div>
+    </header>
+</body>
+
+</html>
