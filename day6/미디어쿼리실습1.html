@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어쿼리 실습1</title>
+</head>
+
+<style>
+    .box {
+        width: 500px;
+        height: 100px;
+        background: royalblue;
+    }
+
+    .box {
+        display: none;
+    }
+
+    @media (min-width: 1280px) {
+        .box:nth-child(1) {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 1280px) {
+        .box:nth-child(2) {
+            display: block;
+        }
+        .box:nth-child(1) {
+            display: none;
+        }
+    }
+
+    @media (max-width: 760px) {
+        .box:nth-child(3) {
+            display: block;
+        }
+        .box:nth-child(2) {
+            display: none;
+        }
+    }
+
+    /* @media (min-width: 761px) and (max-width: 1279px) {
+        .box:nth-child(2) {
+            display: block;
+        }
+    }
+
+    @media (min-width: 361px) and (max-width: 760px) {
+        .box:nth-child(3) {
+            display: block;
+        }
+    } */
+
+    @media (max-width: 360px) {
+        .box:nth-child(4) {
+            display: block;
+        }
+    }
+</style>
+
+<body>
+    <section>
+        <div class="box">
+            저는 브라우저 크기의 100%를 차지하고 브라우저가 1280까지 줄어들면 사라져요
+        </div>
+        <div class="box">
+            저는 브라우저의 크기가 760보다 크고 1280보다 작을때만 나타나요
+        </div>
+        <div class="box">
+            저는 브라우저의 크기가 760이하일 때 나타나고 브라우저가 360보다 작아지면 다시 사라져요
+        </div>
+        <div class="box">
+            저는 브라우저의 크기가 360이하일 때 나타나요
+        </div>
+    </section>
+</body>
+
+</html>
