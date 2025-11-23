@@ -1,0 +1,61 @@
+@media (max-width: 1400px) {
+    .header_ul > li {
+        font-size: 12px;
+    }
+
+    .bottom_header > .right_btn > .btn {
+        width: 120px;
+    }
+
+    .bottom_header > .right_btn > .btn > span {
+        font-size: 12px;
+    }
+
+    .bottom_header > .logo > a > img {
+        width: 130px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header_ul > li {
+        font-size: 8px;
+    }
+
+    .bottom_header > .right_btn > .btn {
+        width: 100px;
+        margin: 0 5px 0 0;
+    }
+
+    .bottom_header > .right_btn > figure {
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+    .bottom_header > .logo > a > img {
+        width: 80px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .top_header {
+        display: none;
+    }
+
+    .header_nav {
+        display: none;
+    }
+
+    .right_btn > .btn {
+        display: none;
+    } /* 안먹힘 왜???*/
+
+    .i_lang {
+        display: none;
+    }
+}
