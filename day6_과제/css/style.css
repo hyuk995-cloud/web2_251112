@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: right;
     align-items: center;
-    background: yellowgreen;
+    /* background: yellowgreen; */
     box-sizing: border-box;
 }
 

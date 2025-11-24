@@ -51,7 +51,7 @@
         display: none;
     }
 
-    .right_btn > .btn {
+    .bottom_header > .right_btn > .btn {
         display: none;
     } /* 안먹힘 왜???*/
 

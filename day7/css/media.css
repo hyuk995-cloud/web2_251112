@@ -1,0 +1,37 @@
+/* 반응형 시작 */
+@media (max-width: 1280px) {
+    .pc_header_bottom > h1 {
+        background: url(../image/동아제약로고.svg);
+        width: 100px;
+        height: 18px;
+        background-size: cover;
+    }
+
+    .pc_header_bottom > nav > ul> li > a {
+        font-size: 12px;
+    }
+
+    .header_right_box {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 960px) {
+    .mo_header {
+        display: flex;
+    }
+
+    .pc_header {
+        display: none;
+    }
+
+    body {
+        background: url(../image/imag1.jpg) no-repeat;
+        height: 100vh;
+        background-size: cover;
+        background-position: 25%;
+    }
+    
+}
+
+/* 반응형 끝 */
