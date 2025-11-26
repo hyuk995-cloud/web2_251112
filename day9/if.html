@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If문</title>
+</head>
+<body>
+    <script>
+        // if(조건식){
+        //     조건식을 만족한다면 실행할 코드;
+        // }
+
+        // let num = 10;
+        // if(num > 500){
+        //     document.write("조건이 참입니다.");
+        // }else{
+        //     document.write("조건이 거짓입니다.")
+        // }
+
+        // if(true){
+        //     document.write("참입니다.");
+        // }
+
+        //사용자가 좋아하는 숫자를 입력받아 그 숫자가 짝수라면 짝수를 좋아하시군요! 홀수라면 홀수를 좋아하시군요!
+
+        // let userNum = prompt("숫자를 입력해주세요.")
+
+        // let result = Number(userNum) % 2;
+
+        // console.log(result);
+
+        // if(result == 0){
+        //     document.write("짝수를 좋아하시는군요!");
+        // }else{
+        //     document.write("홀수를 좋아하시는군요!");
+        // }
+
+
+        // 아래 강사님꺼
+
+        // let likeNum = prompt("당신이 좋아하는 숫자를 입력해주세요.");
+
+        // if(likeNum % 2 == 0){
+        //     document.write("당신이 좋아하는 숫자는 짝수입니다.");
+        // }else{
+        //     document.write("당신이 좋아하는 숫자는 홀수입니다.");
+        // }
+
+        //자동형변환: %,+,*,/, >= < 이런것들은 숫자로만 가능하다.
+        //==========================================================================================================
+
+        // console.log(confirm("강아지를 좋아하세요?"));
+
+        //사용자에게 탈퇴할거냐고 물어본 후 확인을 눌렀다면 탈퇴처리 되었습니다. 출력
+        // 취소를 눌렀다면 탈퇴 취소되었습니다. 출력.
+
+        let userConfirm = confirm("탈퇴하실겁니까?");
+
+        if(userConfirm){
+            document.write("탈퇴처리 되었습니다.");
+        }else{
+            document.write("탈퇴 취소되었습니다.");
+        }
+
+        
+    </script>
+</body>
+</html>

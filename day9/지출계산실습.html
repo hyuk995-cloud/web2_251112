@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습</title>
+</head>
+<body>
+    <script>
+        let food = prompt("당신의 식비는?");
+        let bus = prompt("당신의 교통비는?");
+        let water = prompt("당신의 음료비용은?");
+
+        let totalmoney = 10000;
+
+        let money = Number(food) + Number(bus) + Number(water);
+
+        let overomoney = money - totalmoney;
+        
+        let result = money > totalmoney ? "돈을 초과 지출 했습니다. " + overomoney + "원" : "돈을 잘 썼습니다.";
+
+
+        // console.log(food);
+        // console.log(bus);
+        // console.log(water);
+        // console.log(money);
+        // console.log(result);
+
+
+        document.write("당신은 오늘 " + result);
+
+        //아래 강사님꺼
+
+        let price1 = prompt("오늘의 교통비는?");
+        let price2 = prompt("오늘의 식비는");
+        let price3 = prompt("오늘의 음료비는?");
+
+        let total = Number(price1) + Number(price2) + Number(price3);
+        let result1 = total >= 10000 ? total - 10000 + "원 초과입니다." : "돈 관리 잘 했어요~."
+
+        document.write(result1);
+
+    </script>
+</body>
+</html>
