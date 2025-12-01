@@ -55,6 +55,25 @@
         // }else {
         //     document.write("아이디가 일치하지 않습니다!<br>회원가입 하러가기");
         // }
+
+        //강사님꺼 아래
+        let id = "admin";
+        let pw = "1234";
+
+        let userid = prompt("아이디를 입력해주세요!");
+        if( id !== userid){
+            alert("아이디가 일치하지 않습니다.!");
+            location.reload();
+        } else {
+            let userpw = prompt("비밀번호를 입력해주세요!");
+            if(pw == userpw){
+                document.write(`${userid}  님 반갑습니다.`);
+            }else {
+                alert("비밀번호가 일치하지 않습니다.!");
+            location.reload();
+            }
+        }
+        
     </script>
 </body>
 </html>
