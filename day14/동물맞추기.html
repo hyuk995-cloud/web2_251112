@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동물맞추기</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>컴퓨터가 생각하는 동물 맞추기!</h1>");
+
+        let animalNum;
+        let animal = prompt("강아지, 해달, 너구리 중 선택하세요.");
+
+        /*
+        animal에 들어온 값이 강아지와 같다면 animalnum에 1을 대입
+        animal에 들어온 값이 너구리와 같다면 animalnum에 2를 대입
+        animal에 들어온 값이 해달과 같다면 animalnum에 3을 대입
+        찾는 값이 없다면 경고확인창을 띄워서 잘못된 값 작성 이라고 알려주기;
+        
+        */
+
+        switch(animal){
+            case "강아지" : animalNum = 1;
+            break;
+
+            case "너구리" : animalNum = 2;
+            break;
+
+            case "해달" : animalNum = 3;
+            break;
+
+            default : 
+                alert("올바른 값을 입력해주세요.")
+                location.reload();
+        }
+
+        let computer = Math.ceil(Math.random()*3);
+
+        if( animalNum == computer){
+            document.write(`<h2>정답을 맞추셨습니다.</h2> <img src="./img/animal_img_0${animalNum}.jpg">`);
+        }else {
+            document.write(`<h2>틀리셨습니다. 컴퓨터가 선택한 동물은</h2> <img src="./img/animal_img_0${computer}.jpg">`);
+        }
+        console.log(computer);
+        console.log(animal);
+        console.log(animalNum);
+    </script>
+</body>
+</html>
