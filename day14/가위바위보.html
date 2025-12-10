@@ -65,25 +65,57 @@
         // }
 */
 
-
-        let player = prompt("가위 바위 보를 입력해주세요.");
-        let computer = Math.ceil(Math.random()*3);
-        let computerPick;
-        if(computer == 1){
-            computerPick = "가위";
-        }else if (computer == 2){
-            computerPick = "바위";
-        }else {
-            computerPick = "보";
-        }
+// 내가만든거
+        // let player = prompt("가위 바위 보를 입력해주세요.");
+        // let computer = Math.ceil(Math.random()*3);
+        // let computerPick;
+        // if(computer == 1){
+        //     computerPick = "가위";
+        // }else if (computer == 2){
+        //     computerPick = "바위";
+        // }else {
+        //     computerPick = "보";
+        // }
         
-        if(player == computerPick){
-            document.write("당신은 비겼습니다.");
-        }else if(player == "가위" && computerPick == "보" || player == "바위" && computerPick == "가위" || player == "보" && computerPick == "바위"){
-            document.write(`당신은 이겼습니다. 컴퓨터가 낸 수 : ${computerPick}`);
+        // if(player == computerPick){
+        //     document.write("당신은 비겼습니다.");
+        // }else if(player == "가위" && computerPick == "보" || player == "바위" && computerPick == "가위" || player == "보" && computerPick == "바위"){
+        //     document.write(`당신은 이겼습니다. 컴퓨터가 낸 수 : ${computerPick}`);
+        // }else {
+        //     document.write(`당신이 졌습니다!, 컴퓨터가 낸 수 :${computerPick}`);
+        // }
+
+//강사님이 만든거
+
+        let userChoice = prompt("가위, 바위, 보 중 1택");
+        let randomNum = Math.ceil(Math.random()*3);
+        console.log(randomNum);
+
+        //임시 변수
+        let computerChoice;
+
+        if(randomNum == 1){
+            computerChoice = "가위";
+        }else if(randomNum == 2){
+            computerChoice = "바위";
         }else {
-            document.write(`당신이 졌습니다!, 컴퓨터가 낸 수 :${computerPick}`);
+            computerChoice = "보";
         }
+
+        if(userChoice === computerChoice){
+            document.write(`<p>비겼습니다! 컴퓨터도 ${computerChoice}를 냈습니다.</p>`);
+        }else if (
+            (userChoice === "가위" && computerChoice === "보") ||
+            (userChoice === "바위" && computerChoice === "가위") ||
+            (userChoice === "보" && computerChoice === "바위")
+        ){
+            document.write(`<p>축하합니다. 사용자가 이겼습니다. 컴퓨터는 ${computerChoice}를 냈습니다.</p>`);
+        }else {
+            document.write(`<p>아쉽네요. 컴퓨터가 이겼습니다. 컴퓨터는 ${computerChoice}를 냈습니다.</p>`);
+        }
+
+
+
     </script>
 </body>
 </html>
