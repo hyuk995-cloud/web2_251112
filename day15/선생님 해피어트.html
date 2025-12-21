@@ -11,7 +11,7 @@
 
 <body>
     <section class="main_section">
-        <header>
+        <header id="header" class="header">
             <p>
                 1초 회원 가입하고 3만원 쿠폰팩 받기
             </p>
@@ -57,7 +57,7 @@
 
     <section class="shack_list_section">
         <ul class="shack_list">
-            <li>
+            <li class="top top_li_delay">
                 <img src="../day14과제/img/flex_1.jpg" alt="">
                 <h2 class="shack_name">해피어트 마이크로바이옴 쉐이크 곡물 맛 2주 플랜 (1통)</h2>
                 <div class="shack_price">
@@ -66,7 +66,7 @@
                 </div>
                 <span class="shack_discount">7% off</span>
             </li>
-            <li>                
+            <li class="top top_li_delay">                
                 <img src="../day14과제/img/flex_2.jpg" alt="">
                 <h2 class="shack_name">해피어트 마이크로바이옴 쉐이크 곡물 맛 2주 플랜 (1통)</h2>
                 <div class="shack_price">
@@ -74,7 +74,7 @@
                     <p class="real_price">&#8361; 59,000</p>
                 </div>
                 <span class="shack_discount">7% off</span></li>
-            <li>
+            <li class="top top_li_delay">
                 <img src="../day14과제/img/flex_3.jpg" alt="">
                 <h2 class="shack_name">해피어트 마이크로바이옴 쉐이크 곡물 맛 2주 플랜 (1통)</h2>
                 <div class="shack_price">
@@ -100,13 +100,13 @@
         <div class="research_box">
             <div class="research_top">
                 <ul class="research_list">
-                    <li>
+                    <li class="top center_li_delay">
                         <img src="../day14과제/img/flex_1.jpg" alt="">
                     </li>
-                    <li>
+                    <li class="top center_li_delay">
                         <img src="../day14과제/img/flex_2.jpg" alt="">
                     </li>
-                    <li class="list_text">
+                    <li class="list_text top center_li_delay">
                         <div >
                             <h2>해피어트 테크닉</h2>
                             <p>
@@ -121,7 +121,7 @@
 
             <div class="research_bottom">
                 <ul class="research_list">
-                    <li class="list_text">
+                    <li class="list_text top center_li_delay">
                         <div>
                             <h2>해피어트 테크닉</h2>
                             <p>
@@ -131,10 +131,10 @@
                         </div>
                         <a href="#" class="more_btn">view more</a>
                     </li>
-                    <li>
+                    <li class="top center_li_delay">
                         <img src="../day14과제/img/flex_1.jpg" alt="">
                     </li>
-                    <li>
+                    <li class="top center_li_delay">
                         <img src="../day14과제/img/flex_2.jpg" alt="">
                     </li>
 
@@ -144,28 +144,28 @@
     </section>
 
     <div class="animation_text_zone">
-        <p class="animation_text">
+        <p class="animation_text left">
             Fast way to 
             <span>lose</span> 
             weight
             <br>
             Best way to get healty
         </p>
-        <div class="animation_img">
+        <div class="animation_img right">
             <img src="../day14과제/img/ico_point.png" alt="돌아가는 이미지">
         </div>
     </div>
 
-    <section class="diet_section">
-        <h2>Happier + Diet</h2>
-        <p>
+    <section class="diet_section ">
+        <h2 class="top">Happier + Diet</h2>
+        <p class="top">
             해피어트는 단 한 가지
             <br>
             쉽고 즐거운 다이어트를 돕기 위해 만들어진 브랜드입니다.
             <br>
             포기하지 않고 성공할 수 있는 방법을 제시합니다.
         </p>
-        <a href="#" class="more_btn white">view more</a>
+        <a href="#" class="more_btn white top">view more</a>
     </section>
 
     <footer>
@@ -223,6 +223,75 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    const header = document.getElementById("header");
+    let headerHeight = header.getBoundingClientRect().height;
+    console.log(headerHeight);
+
+    window.addEventListener("scroll", () => {
+        let scrollHeight = window.scrollY;
+        console.log(scrollHeight);
+
+        if (scrollHeight > headerHeight) {
+            header.classList.add("header_bye");
+        } else {
+            header.classList.remove("header_bye");
+        }
+
+        headerHeight = window.scrollY;
+    })
+
+    const topOn = document.getElementsByClassName("top");
+    console.log(topOn);
+
+        window.addEventListener("scroll",()=>{
+            const winH = window.innerHeight;
+            for(let i = 0; i < topOn.length; i++){
+                const contentTop = topOn[i].getBoundingClientRect().top;
+                console.log(contentTop);
+                if(contentTop - winH < 0){
+                    topOn[i].classList.add("top_on");
+                }else {
+                    topOn[i].classList.remove("top_on");
+                }
+            }
+        });
+
+    const leftOn = document.getElementsByClassName("left");
+    console.log(leftOn);
+
+        window.addEventListener("scroll",()=>{
+            const winH = window.innerHeight;
+            for(let i = 0; i < leftOn.length; i++){
+                const contentTop = leftOn[i].getBoundingClientRect().top;
+                console.log(contentTop);
+                if(contentTop - winH < 0){
+                    leftOn[i].classList.add("left_on");
+                }else {
+                    leftOn[i].classList.remove("left_on");
+                }
+            }
+        });
+
+    const rightOn = document.getElementsByClassName("right");
+    console.log(rightOn);
+
+        window.addEventListener("scroll",()=>{
+            const winH = window.innerHeight;
+            for(let i = 0; i < rightOn.length; i++){
+                const contentTop = rightOn[i].getBoundingClientRect().top;
+                console.log(contentTop);
+                if(contentTop - winH < 0){
+                    rightOn[i].classList.add("right_on");
+                }else {
+                    rightOn[i].classList.remove("right_on");
+                }
+            }
+        });
+
+
+</script>
 </body>
 
 </html>
