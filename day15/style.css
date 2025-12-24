@@ -369,16 +369,16 @@ opacity: 0;
     transition: 0.3s;
 }
 
-/* .right {
-    transform: translateX(50%);
+.right {
+    transform: translateX(500px);
     opacity: 0;
 }
 
 .right_on {
-    transform: translateX(50%);
+    transform: translateX(100px);
     opacity: 1;
     transition: 0.3s;
-} */
+}
 
 .top_li_delay:nth-child(2) {
     transition-delay: 0.3s;
