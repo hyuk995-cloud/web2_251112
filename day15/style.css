@@ -229,6 +229,7 @@ header > p {
 /* 애니메이션 존 시작 */
 
 .animation_text_zone {
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -370,12 +371,12 @@ opacity: 0;
 }
 
 .right {
-    transform: translateX(500px);
+    transform: translateX(50%);
     opacity: 0;
 }
 
 .right_on {
-    transform: translateX(100px);
+    transform: translateX(0%);
     opacity: 1;
     transition: 0.3s;
 }
